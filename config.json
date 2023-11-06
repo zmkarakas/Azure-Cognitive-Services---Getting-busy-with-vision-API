@@ -1,5 +1,5 @@
 {
-    "endPoint": "https://training1221.cognitiveservices.azure.com/vision/v3.2",
-    "key1": "20efe00b49674f99988cb63672b523d0",
-    "key2": "f6da6b5bafde46bcaa9ed08058982518"
+    "endPoint": "YOUR ENDPOINT",
+    "key1": "YOUR KEY",
+    "key2": "YOUR SECOND KEY"
 }
