@@ -6,7 +6,7 @@ This repo showcases a simple yet powerful api of Azure. To run the code, set up 
 
 # Describe and Analyze image with tags
 
-I have uploaded myself with glasses in middle of a forest, to see if the api will detect my glasses. It did but confidence values have been lower than my expectation. I have run this test to see if its viable to use it for a startup idea I have. 
+I have uploaded myself with glasses in middle of a forest, to see if the api will detect my glasses. It did but confidence values have been lower than my expectation. The description has 0.517 weighting for confidence, for which I would have expected at least 0.8+. I have run this test to see if its viable to use it for a startup idea I have. 
 
 
 The resulting JSON that came from the API looks like this when formatted, which I think is a very good description of the photo "a man wearing glasses":
