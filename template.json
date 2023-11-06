@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "accounts_training1221_name": {
+            "defaultValue": "training1221",
+            "type": "String"
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.CognitiveServices/accounts",
+            "apiVersion": "2023-10-01-preview",
+            "name": "[parameters('accounts_training1221_name')]",
+            "location": "westeurope",
+            "sku": {
+                "name": "F0"
+            },
+            "kind": "ComputerVision",
+            "identity": {
+                "type": "None"
+            },
+            "properties": {
+                "customSubDomainName": "[parameters('accounts_training1221_name')]",
+                "networkAcls": {
+                    "defaultAction": "Allow",
+                    "virtualNetworkRules": [],
+                    "ipRules": []
+                },
+                "publicNetworkAccess": "Enabled"
+            }
+        }
+    ]
+}
