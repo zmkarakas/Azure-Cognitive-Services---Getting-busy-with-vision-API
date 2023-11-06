@@ -1,4 +1,4 @@
-
+#Change variables according to your setup
 import requests
 import json
 
@@ -32,8 +32,8 @@ def read_image(file_path):
     with open(file_path, 'rb') as image_file:
         return image_file.read()
 
-# Get a simple description
+# Get a simple description   - Change the file names according to your photo name
 describe_image('./Mert.jpg')
 
-# Demo dog.jpg with visual features "Tags"
+# Demo Mert.jpg with visual features "Tags"
 analyze_image('./Mert.jpg')
